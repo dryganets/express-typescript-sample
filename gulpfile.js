@@ -5,7 +5,7 @@ var merge = require('merge2');
 var tsProject = ts.createProject('tsconfig.json');
  
 gulp.task('scripts', function() {
-    var tsResult = gulp.src('src/**/*.ts')
+    var tsResult = tsProject.src()
         .pipe(ts(tsProject));
  
     return merge([ // Merge the two output streams, so this task is finished when the IO of both operations are done. 
@@ -15,5 +15,5 @@ gulp.task('scripts', function() {
 });
  
 gulp.task('watch', ['scripts'], function() {
-    gulp.watch('src/**/*.ts', ['scripts']);
+    gulp.watch(tsPreoject.src(), ['scripts']);
 });
