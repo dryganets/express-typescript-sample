@@ -1,0 +1,11 @@
+{
+  "name": "express-typescript-sample",
+  "version": "1.0.0",
+  "description": "Sapmple express server app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergei Dryganets",
+  "license": "MIT"
+}
